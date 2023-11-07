@@ -32,14 +32,29 @@ function playGame() {
   resultSection.style.display = "block";
 
   // Hiển thị kết quả và cập nhật số tiền của người chơi
-  if (result === "Tài") {
-    const winnings = betAmount * 2 ;
-    betAmountInput.value = winnings;
-    alert("Bạn đã thắng " + winnings);
-  } else {
-    betAmountInput.value = 0;
-    alert("Bạn đã thua " + betAmount);
-  }
+// Thay thế alert bằng SweetAlert
+if (result === "Tài") {
+  const winnings = betAmount * 2;
+
+  // Sử dụng SweetAlert để hiển thị thông báo thay vì alert
+  Swal.fire({
+    icon: 'success',
+    title: 'Thắng!',
+    text: `Bạn đã thắng ${winnings}`,
+  });
+
+  betAmountInput.value = winnings;
+} else {
+  betAmountInput.value = 0;
+
+  // Sử dụng SweetAlert để hiển thị thông báo thay vì alert
+  Swal.fire({
+    icon: 'error',
+    title: 'Thua!',
+    text: `Bạn đã thua ${betAmount}`,
+  });
+}
+
 
   // Reset game sau 5 giây
 }
