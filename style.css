@@ -2,9 +2,33 @@
   
 }
 @media only screen and (max-width: 739px){
-      body{
-        height: 100%;
-      }
+  body {
+    background-image: url(img/mobile-background.jpg);
+    background-size: cover;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  .betting-section {
+    width: 100%;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .button-group button {
+    margin: 5px;
+  }
+ #result{
+  font-size: 25px;
+ }
+  
 }
 @media only screen and (min-width:1024px){
 
