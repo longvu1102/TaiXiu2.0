@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Tài Xỉu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-gradient-to-b from-blue-500 to-blue-700 min-h-screen text-white">
+    <header class="py-4 text-center">
+        <img src="img/unnamed.png" alt="">
+        <marquee width="100%" style="font-size: 23px;" behavior="alternate" bgcolor="red">Nhà cái uy tín đến từ Châu Phi . Đảm bảo mã hóa hết các giao dịch , bảo mật thông tin tuyệt đối an toàn cho khách hàng sử dụng</marquee>
+    </header>
+    <div class="container mx-auto pt-8 text-center">
+        <h1 class="text-4xl font-bold mb-8">Game Tài Xỉu</h1>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="betting-section mb-4">
+                <h2 class="text-2xl text-black font-semibold mb-2">Nhập số tiền muốn cược </h2>
+                <input type="number" id="bet-amount" name="bet-amount" class="w-full px-4 py-2 border rounded-md text-black" required>
+                <h2 class="text-2xl text-black font-semibold my-2">Bạn muốn chọn Tài hoặc Xỉu?</h2>
+                <div class="button-group">
+                    <button class="button-odd bg-red-500 hover:bg-red-600 text-white font-bold px-4 py-2 rounded-md mr-2">Xỉu</button>
+                    <button class="button-even bg-blue-500 hover:bg-blue-600 text-white font-bold px-4 py-2 rounded-md mr-2">Tài</button>
+                    <button class="button-play-again bg-green-500 hover:bg-green-600 text-white font-bold px-4 py-2 rounded-md">Chơi lại</button>
+                </div>
+            </div>
+            <div class="result-section">
+                <h2 class="text-2xl font-semibold mb-2">Kết quả:</h2>
+                <p id="result" class="text-xl font-medium"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
